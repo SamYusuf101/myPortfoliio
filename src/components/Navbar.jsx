@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { logoi, menu, close } from "../assets";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
@@ -41,7 +41,7 @@ const Navbar = () => {
             }}
           >
             <img
-              src={logo}
+              src={logoi}
               alt="logo"
               className="w-13 h-13 
         object-contain"
