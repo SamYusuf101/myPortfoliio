@@ -118,7 +118,7 @@ const Navbar = () => {
                   <li
                     key={link.id}
                     className={`${
-                      active === link.title ? "text-white" : "text-secondary"
+                      active === link.title ? "text-white" : "text-white"
                     } 
             font-poppins text-[16px] font-medium cursor-pointer`}
                     onClick={() => {
