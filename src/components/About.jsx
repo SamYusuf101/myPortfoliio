@@ -10,7 +10,7 @@ const ServiceCard = ({ index, title, icon }) => {
   return (
     <Tilt className="pt-10 xs:w-[250px] w-full ">
       <motion.div
-        className="w-full green-pink-gradient p-[1px]
+        className="w-full green-blue-gradient p-[1px]
       rounded-[20px] shadow-card"
       >
         <div
