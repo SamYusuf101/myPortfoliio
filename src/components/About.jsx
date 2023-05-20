@@ -14,11 +14,6 @@ const ServiceCard = ({ index, title, icon }) => {
       rounded-[20px] shadow-card"
       >
         <div
-          options={{
-            max: 45,
-            scale: 1,
-            speed: 450,
-          }}
           className="bg-tertiary rounded-[20px] py-5
         px-12 min-h-[220px] flex justify-evenly items-center flex-col"
         >
@@ -38,12 +33,19 @@ const ServiceCard = ({ index, title, icon }) => {
 const About = () => {
   return (
     <>
-      <motion.div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 3.5 }}
+      >
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
       <motion.p
+        initial={{ x: -200, opacity: 0 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 2 }}
         className="mt-4 text-secondary
       text-[17px] max-w-3xl leading-[30px] "
       >
