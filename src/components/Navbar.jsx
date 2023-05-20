@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <nav
       className={`${styles.paddingX} w-full flex items-center 
-    fixed top-0 py-3 z-20 bg-primary`}
+    fixed top-0 py-3 z-20 bg-[#002C35]`}
     >
       <div
         className="w-full flex justify-between items-center max-w-9xl
