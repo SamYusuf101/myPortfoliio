@@ -22,12 +22,13 @@ function App() {
           <Navbar />
           <Hero />
         </div>
+        <Tech />
         <div className="pt-10">
           <About />
         </div>
 
         <Experience />
-        <Tech />
+
         <div className="relative z-0">
           <Contact />
           <Stars />
