@@ -3,12 +3,11 @@ import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { services } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
-    <Tilt className="pt-10 xs:w-[250px] w-full ">
+    <Tilt className="pt-10 w-full  xs:w-[250px] ">
       <motion.div
         className="w-full green-blue-gradient p-[1px]
       rounded-[20px] shadow-card"
@@ -38,8 +37,7 @@ const About = () => {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 3.5 }}
       >
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionHeadText}>About</h2>
       </motion.div>
 
       <motion.p
