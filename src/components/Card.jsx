@@ -8,7 +8,7 @@ const Card = ({ title, icon }) => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 3.5 }}
-        className="items-center justify-center m-5 sm:m-0 text-center  "
+        className="items-center justify-center m-5 sm:m-0 text-center md:m-3"
       >
         <img src={icon} alt="icon" />
         <p className="text-white">{title}</p>

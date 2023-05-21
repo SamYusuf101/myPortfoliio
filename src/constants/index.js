@@ -13,8 +13,8 @@ import {
     nodejs,
     mongodb,
     git,
-    figma,
-    docker,
+    chatbot,
+    sanity,
     meta,
     starbucks,
     tesla,
@@ -109,12 +109,12 @@ import {
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
+      name: "chatbot",
+      icon: chatbot,
     },
     {
-      name: "docker",
-      icon: docker,
+      name: "sanity",
+      icon: sanity,
     },
   ];
   
