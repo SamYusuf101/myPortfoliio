@@ -24,7 +24,7 @@ const Hero = () => {
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            <span className="text-3xl">{text}</span>
+            <span className="text-3xl md:text-7xl">{text}</span>
             <Cursor cursorColor="#395BBF" />
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white`}>
