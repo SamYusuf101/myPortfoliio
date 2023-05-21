@@ -3,6 +3,7 @@ import { technologies } from "../constants";
 import { motion } from "framer-motion";
 import React from "react";
 import { styles } from "../styles";
+import Card from "./Card";
 
 const Tech = () => {
   return (
@@ -20,7 +21,7 @@ const Tech = () => {
       >
         {technologies.map((technology) => (
           <div className="w-28 h-28" key={technology.name}>
-            {technology.name}
+            <Card title={technology.name} icon={technology.icon} />
           </div>
         ))}
       </div>
