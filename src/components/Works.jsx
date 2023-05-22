@@ -16,7 +16,11 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 3.5 }}
+    >
       <Tilt
         options={{
           max: 45,
@@ -91,6 +95,9 @@ const Works = () => {
       </motion.div>
       <div className="w-full flex">
         <motion.p
+          initial={{ x: -200, opacity: 0 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 2 }}
           className="mt-3 text-secondary text-[17px]
 max-w-3xl leading-[30px]"
         >
@@ -108,4 +115,4 @@ max-w-3xl leading-[30px]"
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "projects");
