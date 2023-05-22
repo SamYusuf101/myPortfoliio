@@ -13,7 +13,7 @@ const ServiceCard = ({ index, title, icon }) => {
       rounded-[20px] shadow-card"
       >
         <div
-          className="bg-tertiary rounded-[20px] py-5
+          className="bg-[#002C35] rounded-[20px] py-5
         px-12 min-h-[220px] flex justify-evenly items-center flex-col"
         >
           <img src={icon} alt={title} className="w-16 h-16 object-contain" />
