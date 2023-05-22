@@ -26,8 +26,9 @@ function App() {
         <div className="pt-10">
           <About />
         </div>
-
-        <Experience />
+        <div>
+          <Experience />
+        </div>
         <Tech />
         <Works />
         <div className="relative z-0">

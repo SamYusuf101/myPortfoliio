@@ -25,7 +25,12 @@ const Contact = () => {
       className="xl:mt-12 xl:flex-row 
   flex-col-reverse flex gap-10 overflow-hidden"
     >
-      <motion.div className="flex-[0.75] bg-black-100 p-8 rounded-2xl">
+      <motion.div
+        initial={{ x: -200, opacity: 0 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 2 }}
+        className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
+      >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact</h3>
 
@@ -42,7 +47,7 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="Your name"
-              className="bg-tertiary py-4 px-6
+              className="bg-[#002C35] py-4 px-6
               placeholder:text-secondary text-white
               rounded-lg outlined-none border-none font-medium "
             />
@@ -55,7 +60,7 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="Your email"
-              className="bg-tertiary py-4 px-6
+              className="bg-[#002C35] py-4 px-6
               placeholder:text-secondary text-white
               rounded-lg outlined-none border-none font-medium "
             />
@@ -68,14 +73,14 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder="Your message"
-              className="bg-tertiary py-4 px-6
+              className="bg-[#002C35]  py-4 px-6
               placeholder:text-secondary text-white
               rounded-lg outlined-none border-none font-medium "
             />
           </label>
           <button
             type="submit"
-            className="bg-tertiary py-3 px-8
+            className="bg-[#002C35]  py-3 px-8
           outline-none w-fit text-white
           font-bold shadow-md shadow-primary
           rounded-xl"
@@ -85,6 +90,9 @@ const Contact = () => {
         </form>
       </motion.div>
       <motion.div
+        initial={{ x: 200, opacity: 0 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 2 }}
         className="xl:flex-1 xl:h-auto md:h-[550px]
       h-[350px]"
       >
