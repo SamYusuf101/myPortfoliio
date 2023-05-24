@@ -16,9 +16,46 @@ const Contact = () => {
 
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {};
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+  };
 
-  const handleSubmit = (e) => {};
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs
+      .send(
+        "service_fdgdkpe",
+        "template_oxelorr",
+        {
+          from_name: form.name,
+          to_name: "Sam",
+          from_email: form.email,
+          to_email: "samyusuf101@gmail.com",
+          message: form.message,
+        },
+        "BBPwvjk35fjw-2gJA"
+      )
+
+      .then(
+        () => {
+          setLoading(false);
+          alert("Thank you, i will get back to you as soon as possible");
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+          console.log(error);
+          alert("something went wrong");
+        }
+      );
+  };
 
   return (
     <div
