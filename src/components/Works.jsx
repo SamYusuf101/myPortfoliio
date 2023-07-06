@@ -2,6 +2,7 @@ import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { github } from "../assets";
+import { live } from "../assets";
 import { projects } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -55,7 +56,7 @@ flex justify-center items-center cursor-pointer"
 flex justify-center items-center cursor-pointer"
             >
               <img
-                src={github}
+                src={live}
                 slt="github"
                 className="w-1/2 h-1/2 object-contain"
               />
