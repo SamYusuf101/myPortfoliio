@@ -14,6 +14,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  source_code_link1,
 }) => {
   return (
     <motion.div
@@ -49,7 +50,7 @@ flex justify-center items-center cursor-pointer"
               />
             </div>
             <div
-              onClick={() => window.open(source_code_link, "_blank")}
+              onClick={() => window.open(source_code_link1, "_blank")}
               className="blue1-gradient w-10 h-10 rounded-full
 flex justify-center items-center cursor-pointer"
             >
